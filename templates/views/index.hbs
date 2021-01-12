@@ -27,8 +27,10 @@
   <h2 class="body_title">Descubrí</h2>
 
   <form class="form-inline pt-4">
-    <input id="buscador" class="form-control form-control-sm ml-3 w-50" type="text" placeholder="Busca la canción que querés escuchar"
-      aria-()label="Search">
+    <input id="inputBusqueda" class="form-control form-control-sm ml-3 w-50" type="text"
+      placeholder="Busca la canción que querés escuchar" aria-()label="Search" onchange="getSong(e.target.value)">
+
+    <button id="btnBusqueda">Buscar</button>
   </form>
 
   <div class="container-lanzamientos">
@@ -53,72 +55,73 @@
   </ul>
 
   <h4 class="playlists-title">nuevas playlists</h4>
-  <button type="button" class="btn-reproducir-h4" href="https://open.spotify.com/search/spotify%20playlists/playlists">Reproducir</button>
-  
+  <button type="button" class="btn-reproducir-h4"
+    href="https://open.spotify.com/search/spotify%20playlists/playlists">Reproducir</button>
+
   <div class="spoti_container">
     <h6 id="spotinews">SPOTInews</h6>
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/slider-3.jpg" class="d-block w-100" alt="Red-Hot-Chili-Peppers-noticia">
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="carousel-title">THE WEEKND, INDIGNADO CON LOS GRAMMYS</h5>
-          <p class="carousel-p">"Nos deben a mis fans y a mi una disculpa"</p>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slider-3.jpg" class="d-block w-100" alt="Red-Hot-Chili-Peppers-noticia">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-title">THE WEEKND, INDIGNADO CON LOS GRAMMYS</h5>
+            <p class="carousel-p">"Nos deben a mis fans y a mi una disculpa"</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider-1.jpg" class="d-block w-100" alt="Billie-Eilish-noticia">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-title">JUNTOS OTRA VEZ</h5>
+            <p class="carousel-p">John Frusciante vuelve a ser integrante de Red Hot Chili Peppers</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider-2.jpg" class="d-block w-100" alt="The-Weeknd-noticia">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-title">BILLIE EILISH: ¿VIENE NUEVO ÁLBUM?</h5>
+            <p class="carousel-p">En su entrevista con Vanity Fair reveló:"Tengo 14 canciones compuestas"</p>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/slider-1.jpg" class="d-block w-100" alt="Billie-Eilish-noticia">
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="carousel-title">JUNTOS OTRA VEZ</h5>
-          <p class="carousel-p">John Frusciante vuelve a ser integrante de Red Hot Chili Peppers</p>
-        </div>  
-      </div>  
-      <div class="carousel-item">
-        <img src="img/slider-2.jpg" class="d-block w-100" alt="The-Weeknd-noticia">
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="carousel-title">BILLIE EILISH: ¿VIENE NUEVO ÁLBUM?</h5>
-          <p class="carousel-p">En su entrevista con Vanity Fair reveló:"Tengo 14 canciones compuestas"</p>
-        </div>
-      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </a>
-  </div>
 
-  <div class="list-group pt-3">
-    <ul class="list-group list-group-flush py-3">
-      <li class="list-grop-item list-unstyled pt-2">
-        <h4 class="articulos-title">Artículos de Spotify </h4>
-      </li>
-      <a href="error404.html">
-        <li class="list-group-item text-left">Descubre nuevas bandas durante el confinamiento</li>
-      </a>
-      <a href="error404.html">
-        <li class="list-group-item text-left">¿Eres un nuevo artista?</li>
-      </a>
-      <a href="error404.html">
-        <li class="list-group-item text-left">Encuentra tips para comenzar en el mundo de la música</li>
-      </a>
+    <div class="list-group pt-3">
+      <ul class="list-group list-group-flush py-3">
+        <li class="list-grop-item list-unstyled pt-2">
+          <h4 class="articulos-title">Artículos de Spotify </h4>
+        </li>
+        <a href="error404.html">
+          <li class="list-group-item text-left">Descubre nuevas bandas durante el confinamiento</li>
+        </a>
+        <a href="error404.html">
+          <li class="list-group-item text-left">¿Eres un nuevo artista?</li>
+        </a>
+        <a href="error404.html">
+          <li class="list-group-item text-left">Encuentra tips para comenzar en el mundo de la música</li>
+        </a>
 
-    </ul>
-  </div>
+      </ul>
+    </div>
   </div>
 
   </article>
   </section>
   </div>
-  
+
 
 
 

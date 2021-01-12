@@ -1,21 +1,40 @@
-/*const request = require('postman-request');
-let spotifyWebApi = require('spotify-web-api-node');
-const authorizationCode = '<insert authorization code>';
+let SpotifyWebApi = require("spotify-web-api-node");
 
-const spotifyApi = new spotifyWebApi ({
-    clientId: 'd9892d790caa44fcb9280444fd5e3d7b',
-    clientSecret: '432d7cb2f30d48568626d244d1ffc198',
-    redirectUri: 'https://localhost:3000/callback'
- });*/
+// Credentials (optional)
+let spotifyApi = new SpotifyWebApi({
+  clientId: "fcecfc72172e4cd267473117a17cbd4d",
+  clientSecret: "a6338157c9bb5ac9c71924cb2940e1a7",
+  redirectUri: "http://www.example.com/callback",
+});
 
+// Token (general)
+spotifyApi.setAccessToken(
+  'BQCEO8ITcbQIQx9D--lloNLEjHYWmrbah5x1KWFXlgAE96JhxqUgzBkyB9xr5-TCtbNwnEp8pLrrMGDuSKD7sq1aY2ZV-5OkD7ms7qbLZaq6ENUPA4dOEtA0RQxAEDHf_3a8Tu-cQAYd'
+);
 
-/* Load the HTTP library */
-var http = require("http");
+// Main function
+function getSong(songName) {
+  let result = {};
 
-/* Create an HTTP server to handle responses */
+  if (songName) {
+    spotifyApi.searchTracks(songName).then(
+      function (data) {
+        const { name, artists, album, preview_url } = data.body.tracks.items[0];
 
-http.createServer(function(request, response) {
-  response.writeHead(200, {"Content-Type": "text/plain"});
-  response.write("Hello World");
-  response.end();
-}).listen(8888);
+        result.songName = name;
+        result.artists = artists[0].name;
+        result.preview = preview_url;
+        result.image = album.images[0].url;
+      },
+      function (err) {
+        console.error(err);
+      }
+    );
+    
+    return result;  
+  }
+
+  
+}
+
+module.exports = getSong
