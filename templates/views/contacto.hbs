@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/contactoStyle.css">
+<script type="text/javascript" src="js/formulario.js"></script>
+</head>
+<body>
+
+    {{>header}}
+
+  <div class="container_contact">
+    <h1 class="contact_title">Contactanos</h1>
+    <p class="contact_p"> Tienes alguna pregunta, alguna queja, o necesitas ayuda? <br>Escribenos, nos encantaría ayudarte. </p>
+    <div class="contact-box">
+      <div class="contact-left">
+        <h3 class="contact_second_title">Envíanos un mensaje</h3>
+        <form id="form">
+
+          <div class="input-row">
+            <div class="input-group">
+              <label>Nombre y Apellido</label>
+              <input type="text"  id="name" placeholder="Aqui tu nombre" required>
+            </div>
+            <div class="input-group">
+              <label>Celular</label>
+              <input type="text"  id="cellphone" placeholder="+54..." required>
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div class="input-group">
+              <label>Email</label>
+              <input type="text" id="email" placeholder="email@ej.com" required>
+            </div>
+            <div class="input-group">
+              <label>Tema</label>
+              <input type="text" id="theme" placeholder="¿Cómo podemos ayudarte?" required>
+            </div>
+          </div>
+
+          <label>Mensaje</label>
+          <textarea rows="5" id="message" placeholder="Tu mensaje" required></textarea>
+          
+          <button type="button" onclick="getData()" class="send_button">Enviar</button>
+
+        </form>
+    
+      </div>
+      <div class="contact-right">
+        <h3 class="contact_second_title">Encuentranos</h3>
+        
+        <table>
+          <tr>
+            <td>Email</td>
+            <td>office@spotify.com</td>
+          </tr>
+          <tr>
+            <td>Teléfono</td>
+            <td>+54 123 4567890</td>
+          </tr>
+          <tr>
+            <td>Dirección</td>
+            <td>Pedregal 24 Torre Virreyes Piso 8<br>
+              Col. Molino del Rey<br>
+              DF 11040<br>
+              Mexico</td>
+          </tr>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14243.744099424042!2d-65.3213313!3d-26.8101656!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201f721fdd345%3A0x2e29f738c3d828!2sTorre%20Virreyes!5e0!3m2!1ses-419!2sar!4v1610391370270!5m2!1ses-419!2sar" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </table>
+
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    {{>footer}}
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+

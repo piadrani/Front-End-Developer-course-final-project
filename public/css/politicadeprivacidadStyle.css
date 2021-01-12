@@ -1,0 +1,64 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 40px 40px 40px 40px;
+}
+
+.politica-title{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 80px;
+    font-weight: bold;
+    color: #1db954;
+}
+
+.politica-subtitulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-top: 50px;
+    background-color:  #262927;
+    color: rgb(255, 255, 255);
+}
+
+
+.politica-p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: large;
+}
+
+.politica-ol li{
+    font-family: 'Poppins', sans-serif;
+    list-style-type: disc;
+}
+
+div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.politica-h4{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #1db954;
+    font-size:40px;
+    font-weight: 200;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+    color: #1db954(20, 19, 19);
+    margin-left: 20px;
+    font-size: 20px;
+    list-style-type: disc;
+}
+
+
+
+

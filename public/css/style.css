@@ -1,0 +1,280 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  overflow-x: hidden !important;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 1.5;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(161,114,214,1) 0%, rgba(218,124,196,1) 100%, rgba(228,89,183,1) 100%, rgba(6,15,88,1) 100%);
+}
+
+.hero {
+  background-image: url("https://www.audioanalytic.com/app/uploads/2019/05/man-wearing-headphones.jpg");
+  height: 690px;
+}
+
+.hero .container {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.big-title {
+  font-family: "Poppins", sans-serif;
+  width: inherit;
+  color: rgb(54, 52, 52);
+  font-size: 80px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  margin-right: auto;
+}
+
+.btn-spotify {
+  width: 260px;
+  margin: 0 auto;
+  margin-right: 69%;
+  color: white;
+  background-color: #1db954;
+  padding: 18px 42px 18px;
+  border: 0px;
+  border-radius: 500px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 2px;
+  transition-duration: 0.3s;
+}
+
+.btn-spotify:hover {
+  cursor: pointer;
+  background-color: #1ed760;
+}
+
+.body_title{
+  font-family: "Poppins", sans-serif;
+  width: inherit;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-top: 40px;
+  padding: 0;
+}
+
+#buscador{
+  vertical-align:middle;
+}
+
+.container-lanzamientos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.lanzamientos-list {
+  max-width: 700px;
+  width: 70%;
+  list-style-type: none;
+  margin-top: 70px;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.lanzamientos-title {
+  font-family: "Poppins", sans-serif;
+  padding-left: 4rem;
+  width: 30%;
+  font-size: 40px;
+  font-weight: 600;
+  color:white;
+}
+
+.btn-reproducir-h3 {
+  width: 170px;
+  color: white;
+  background-color: #1db954;
+  padding: 18px 42px 18px;
+  border: 0px;
+  border-radius: 500px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 2px;
+  transition-duration: 0.3s;
+  text-align: center;
+}
+
+.playlists-title{
+  width: inherit;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  margin-bottom: 5px;
+  margin-top: 150px;
+  margin-left: 120px;
+  color: white;
+}
+
+.container-flex {
+  max-width: 700px;
+  width: 70%;
+  list-style-type: none;
+  margin-top: 30px;
+  padding-top: 60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  float: right;
+  margin-right:20px;
+}
+
+.btn-reproducir-h4 {
+  width: 170px;
+  color: white;
+  background-color: #1db954;
+  padding: 18px 42px 18px;
+  border: 0px;
+  border-radius: 500px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 2px;
+  transition-duration: 0.3s;
+  text-align: center;
+  margin-left:180px;
+  margin-top: 20px;
+}
+
+#spotinews {
+  width: inherit;
+  color: #575c58;
+  margin-right: auto;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  margin-top: 150px;
+}
+
+.spoti_container{
+  background-color:rgb(43, 40, 40)
+}
+
+.carousel-title{
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: #503535;
+}
+
+.carousel-p {
+  font-size: 22px;
+  color: rgb(199, 174, 174);
+}
+
+.item {
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin: 5px 2px;
+}
+
+input {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: 150px;
+  margin-bottom: 100px;
+}
+
+/*h3 {
+  width: inherit;
+  font-size: 90px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  margin-bottom: 100px;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.74);
+}*/
+
+.container {
+  height: inherit; /* get parent height */
+  width: 1170px; /* add 970px for smaller screen */
+  margin: 0px auto;
+  padding: 0 20px;
+  display: flex;
+}
+
+
+
+
+
+/*.btn-sus {
+  background-color: #81b71a !important;
+  color: #f8fcf1 !important;
+  border: #81b71a 1px;
+}
+.btn-verde:hover {
+  background-color: #81b71a !important;
+  color: white !important;
+}*/
+
+/* Galeria de imagenes */
+
+.efectoImagen {
+  filter: saturate(20%);
+  border-radius: 10px;
+}
+.efectoImagen:hover {
+  filter: saturate(100%);
+  transition: 350ms;
+  cursor: pointer;
+  box-shadow: 0px 0px 94px -21px #81b71a;
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    text-align: center;
+    background-color: white;
+  }
+}
+footer h5 {
+  color: rgb(0, 0, 0);
+}
+@media screen and (max-width: 576px) {
+  .carousel-slider {
+    margin-top: 45px;
+  }
+  .btn-sus {
+    color: #81b71a !important;
+    background-color: white;
+  }
+}
+.imagen {
+  width: 50%;
+  height: 70%;
+  border-radius: 100%;
+  margin-top: 15px;
+  margin-left: 20%;
+}
