@@ -40,7 +40,13 @@ app.get("/error404", (req, res) => {
   res.render("error404.hbs");
 });
 
-const getSong = require("./public/js/service");
+/* Spotify Api */
+const mySpoti = require("./public/js/service");
+
+mySpoti.getSongs("Im not made by design").then((res) => console.log(res)); //Should replace the parameter for the search input value
+
+/* Spotify Api */
+
 
 
 app.listen(3000, () => {
