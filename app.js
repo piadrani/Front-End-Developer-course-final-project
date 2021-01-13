@@ -2,7 +2,6 @@ const path = require("path");
 const hbs = require("hbs");
 const express = require("express");
 const app = express();
-const bodyParser = require("body-parser");
 
 const viewsPath = path.join(__dirname, "templates/views");
 const partialPath = path.join(__dirname, "templates/partials");
@@ -44,7 +43,7 @@ app.get("/error404", (req, res) => {
 /* Spotify Api */
 const mySpoti = require("./public/js/service");
 
-mySpoti.getSongs("Im not made by design").then((res) => {
+mySpoti.getSongs("Muse").then((res) => {
   hbs.registerHelper("results", () => res);
 });
 

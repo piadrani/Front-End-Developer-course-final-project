@@ -11,7 +11,7 @@ let spotifyApi = new SpotifyWebApi(credentials);
 
 // We're hardcoding the token. It should be refreshed, but it will require an authentication in our web
 spotifyApi.setAccessToken(
-  "BQAK_AN6faNKHGHTNOZyLIaotQO0-ByBzWuZJsN0k9yJ95_E8RLnZUpZL-0Qkpy2nRzKN4nDOgn0juvGcJ_rNhxJpv_GhQgCzKSo95qjnjMjhUGs7gp-vvnUxUY9gBhERIN3PQP_GG_O"
+  "BQAYhRHheKCJKOBWGkV4Tr1wYD4u1JcBgvx2MwCDC2tmoaMRfGRYzh76C50igYrk0RqQIRYc7OAVI7rtmIMAExGdJ6_2Jta6d0ORtNWElt-NYXF8fXsqq7ljK8kF_sTcFH4oPfQlApMO"
 );
 
 // Main function

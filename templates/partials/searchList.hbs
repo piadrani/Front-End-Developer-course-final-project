@@ -2,7 +2,7 @@
 
 <div class="search-panel-container">
 
-  <form action="http://localhost:3000/" name="searchForm" id="searchForm">
+  <form id="searchForm">
     <input id="inputBusqueda" name="busqueda" type="text" placeholder="Busca la canción que querés escuchar"
       aria-()label="Search">
     <button id="btnBusqueda">Buscar</button>
@@ -10,7 +10,7 @@
 
   <div id="resultsContainer" class="results-container">
     {{#each (results)}}
-    <div onclick="location.href='{{this.preview}}'" class="result-item">
+    <div onclick="location.href='{{this.preview}}'" id="resultItem" class="result-item">
       <img id="result-img" src="{{this.image}}" alt="">
 
       <div class="result-data">
@@ -18,17 +18,19 @@
         <p>{{this.artist}}</p>
       </div>
     </div>
+
     {{/each}}
   </div>
 
 </div>
+
 
 <script>
   let inputBusqueda = document.getElementById('inputBusqueda');
 
   let searchForm = document.getElementById('searchForm');
   searchForm.addEventListener('submit', (e) => {
-    // e.preventDefault();
-    //  console.log(inputBusqueda.value);
-  }) 
+    e.preventDefault();
+    console.log(inputBusqueda.value);
+  })
 </script>
