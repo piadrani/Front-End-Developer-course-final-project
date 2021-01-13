@@ -1,5 +1,4 @@
 let SpotifyWebApi = require("spotify-web-api-node");
-let fetch = require("node-fetch");
 
 // Credentials
 let credentials = {
@@ -12,7 +11,7 @@ let spotifyApi = new SpotifyWebApi(credentials);
 
 // We're hardcoding the token. It should be refreshed, but it will require an authentication in our web
 spotifyApi.setAccessToken(
-  "BQANEqxuvuFYksSz4V1B3-9CapTBsEmPTmi5mAOra0UZEVDlfY9LMgkdAP6PaD2gWl5oBEY3nuYym6sczlBcY4jOq3FxHllC68V7zaCeWg9btx_G_nIutLf-AibJxfQWBiikIomJzj_C"
+  "BQAK_AN6faNKHGHTNOZyLIaotQO0-ByBzWuZJsN0k9yJ95_E8RLnZUpZL-0Qkpy2nRzKN4nDOgn0juvGcJ_rNhxJpv_GhQgCzKSo95qjnjMjhUGs7gp-vvnUxUY9gBhERIN3PQP_GG_O"
 );
 
 // Main function
@@ -35,7 +34,7 @@ async function getSongs(songName) {
 
     const result = {
       songName: name,
-      artists: artists[0].name,
+      artist: artists[0].name,
       preview: preview_url,
       image: album.images[0].url,
     };
@@ -45,5 +44,4 @@ async function getSongs(songName) {
 
   return list;
 }
-
 module.exports = { getSongs: getSongs };

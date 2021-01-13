@@ -1,0 +1,34 @@
+<link rel="stylesheet" type="text/css" href="css/searchList.css">
+
+<div class="search-panel-container">
+
+  <form action="http://localhost:3000/" name="searchForm" id="searchForm">
+    <input id="inputBusqueda" name="busqueda" type="text" placeholder="Busca la canción que querés escuchar"
+      aria-()label="Search">
+    <button id="btnBusqueda">Buscar</button>
+  </form>
+
+  <div id="resultsContainer" class="results-container">
+    {{#each (results)}}
+    <div onclick="location.href='{{this.preview}}'" class="result-item">
+      <img id="result-img" src="{{this.image}}" alt="">
+
+      <div class="result-data">
+        <h5 class="result-song-title">{{this.songName}}</h5>
+        <p>{{this.artist}}</p>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+
+</div>
+
+<script>
+  let inputBusqueda = document.getElementById('inputBusqueda');
+
+  let searchForm = document.getElementById('searchForm');
+  searchForm.addEventListener('submit', (e) => {
+    // e.preventDefault();
+    //  console.log(inputBusqueda.value);
+  }) 
+</script>
